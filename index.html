@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div><h1 id="title" class="text-center">freeCodeCamp Survey Form</h1></div>
+            <div><p id="description" class="description text-center">Standard survey information.</p></div>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input min="10" max="99" type="number" name="age" id="number" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <label>Current Role?</label>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <fieldset class='legacy-form-group'>
+                <legend>Radio Button?</legend>
+                <input id='radio-yes'
+                       name='talk-type'
+                       type='radio'
+                       value='main-stage' checked/>
+                <label for='talk-type-1' class='radio-label'>Yes</label>
+                <input id='radio-no'
+                       name='talk-type'
+                       type='radio'
+                       value='workshop'/>
+                <label for='talk-type-2' class='radio-label'>No</label>
+                <input id='radio-maybe'
+                       name='talk-type'
+                       type='radio'
+                       value='workshop'/>
+                <label for='talk-type-2' class='radio-label'>Maybe</label>
+              </fieldset>
+
+            <div class="form-group">
+                <label>Favorite Feature?</label>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+
+            <fieldset class='legacy-form-group'>
+                <legend>Checkbox?</legend>
+                <input id='radio-yes'
+                       name='talk-type'
+                       type='checkbox'
+                       value='main-stage' checked/>
+                <label for='talk-type-1' class='radio-label'>Yes</label>
+                <input id='radio-no'
+                       name='talk-type'
+                       type='checkbox'
+                       value='workshop'/>
+                <label for='talk-type-2' class='radio-label'>No</label>
+                <input id='radio-maybe'
+                       name='talk-type'
+                       type='checkbox'
+                       value='workshop'/>
+                <label for='talk-type-2' class='radio-label'>Maybe</label>
+              </fieldset>
+
+              <fieldset class='legacy-form-group'>
+                <legend>Another Checkbox?</legend>
+                <input id='radio-yes'
+                       name='talk-type'
+                       type='checkbox'
+                       value='main-stage' checked/>
+                <label for='talk-type-1' class='radio-label'>Yes</label>
+                <input id='radio-no'
+                       name='talk-type'
+                       type='checkbox'
+                       value='workshop'/>
+                <label for='talk-type-2' class='radio-label'>No</label>
+                <input id='radio-maybe'
+                       name='talk-type'
+                       type='checkbox'
+                       value='workshop'/>
+                <label for='talk-type-2' class='radio-label'>Maybe</label>
+              </fieldset>
+            
+
+            <div class="form-group">
+                <label>Comments?</label>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
